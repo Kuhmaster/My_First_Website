@@ -1,0 +1,61 @@
+body {    
+    background-color: #f40ed5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.vin{
+    background: url(../image/vin.jpg) no-repeat center center;
+    background-size: 100%;
+    width: 270px;
+    height: 300px;
+}
+
+.logo {
+    background: url(../image/witcher.png) no-repeat center center;
+    background-size: 100%;
+    width: 90px;
+    height: 75px;
+}
+
+.nav_bar {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.row {
+
+}
+
+.col-8 {
+
+}
+
+.col-4 {
+
+}
+
+.col-3.nav_logo {
+
+}
+
+.col-9 {
+
+}
+
+.nav_text {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.img_size {
+
+}
+
+.title_photo {
+    text-align: center;
+}
