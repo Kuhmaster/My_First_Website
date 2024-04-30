@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
 
     if(!mysqli_query($link, $sql)) die("не удалось добавить пост");
 }
-if(!empty($_FILES["file"]))
+if(isset($_FILES["file"]))
     {
         $errors = [];
         $allowedtypes = ['image/gif', 'image/jpeg', 'image/jpg', 'image/pjpeg', 'image/x-png', 'image/png'];
