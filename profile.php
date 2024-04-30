@@ -80,8 +80,8 @@ if (isset($_POST['submit'])) {
     $sql = "INSERT INTO posts (title, main_text) VALUES ('$title', '$main_text')";
 
     if (!mysqli_query($link, $sql)) die ("Не удалось добавить пост");
-
-    if(!empty($_FILES["file"]))
+}
+if(!empty($_FILES["file"]))
     {
         if (((@$_FILES["file"]["type"] == "image/gif") || (@$_FILES["file"]["type"] == "image/jpeg") || (@$_FILES["file"]["type"] == "image/jpg") || (@$_FILES["file"]["type"] == "image/pjpeg") || (@$_FILES["file"]["type"] == "image/x-png") || (@$_FILES["file"]["type"] == "image/png")) && (@$_FILES["file"]["size"] < 102400))
         {
@@ -93,7 +93,4 @@ if (isset($_POST['submit'])) {
             echo "upload failed!";
         }
     }
-
-}
-
 ?>
