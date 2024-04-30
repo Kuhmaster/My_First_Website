@@ -10,11 +10,33 @@ body {
     height: 300px;
 }
 
+.btn_red{
+    border: none;
+    border-radius: 35px;
+    width: 120px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold
+}
+
+.index{
+    font-size: large;
+    font-weight: bold;
+    color: chocolate;
+}
+
 .logo {
     background: url(../image/witcher.png) no-repeat center center;
     background-size: 100%;
     width: 90px;
     height: 75px;
+}
+
+.form_reg{
+    font-size: auto;
+    font-weight: bold;
+    color: aqua;
 }
 
 .nav_bar {
