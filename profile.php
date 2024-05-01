@@ -91,7 +91,7 @@ if(isset($_FILES["file"]))
         $allowedtypes = ['image/gif', 'image/jpeg', 'image/jpg', 'image/pjpeg', 'image/x-png', 'image/png'];
         $maxFileSize = 102400; 
 
-        if ($_FILES['file']['error'] !== UPLOAD_ERR_OK) {
+        if ($_FILES['file']['error'] != UPLOAD_ERR_OK) {
             $errors[] = 'Произошла ошибка при загрузке файла.';
         }
 
