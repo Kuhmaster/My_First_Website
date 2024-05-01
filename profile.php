@@ -73,8 +73,11 @@ $link = mysqli_connect('127.0.0.1', 'root', 'kali', 'first');
 
 if (isset($_POST['submit'])) {
 
-    $title = mysqli_real_escape_string($link, $_POST['title']);
-    $main_text = mysqli_real_escape_string($link, $_POST['text']);
+    $title = strip_tags($_POST['title']);
+    $main_text = strip_tags($_POST['text']);
+
+    $title = mysqli_real_escape_string($link, $title);
+    $main_text = mysqli_real_escape_string($link, $main_text);
 
     if (!$title || !$main_text) die("Заполните все поля");
 
