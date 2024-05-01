@@ -101,7 +101,7 @@ if(isset($_FILES["file"]))
         }
 
         $fileType = finfo_file(finfo_open(FILEINFO_MIME_TYPE), $_FILES['file']['tmp_name']);
-        if (!in_array($fileType, $allowedTypes)) {
+        if (!in_array($fileType, $allowedtypes)) {
             $errors[] = 'Недопустимый тип файла.';
         }
 
